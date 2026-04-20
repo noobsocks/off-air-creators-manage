@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  }
+}
+
+@layer components {
+  .badge-translation {
+    @apply bg-blue-50 text-blue-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .badge-consulting {
+    @apply bg-purple-50 text-purple-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .badge-other {
+    @apply bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .status-pending {
+    @apply bg-amber-50 text-amber-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .status-confirmed {
+    @apply bg-blue-50 text-blue-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .status-progress {
+    @apply bg-purple-50 text-purple-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  .status-complete {
+    @apply bg-emerald-50 text-emerald-600 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+}
